@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>Verano Seguro</title>
+    <title>Summer Fun</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -27,178 +27,203 @@
 
           <section class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#">Indice UV</a></li>
-              <li><a href="#">Indice Marea</a></li>
-              <li><a href="#">Salvavidas</a></li>
-              <li><a href="#">Playas No Saludables</a></li>
+              <li><a href="index.html">Ubica tu playa</a></li>
+              <li><a href="salvavidas.html">Salvavidas</a></li>
+              <li><a href="nosaludable.html">Playa No Saludables</a></li>
             </ul>
           </section>
         </nav>
       </header>
-      <section class="home full-window col-xs-12">
 
+      <!-- Tres columnas -->
+      <section class="row home">
+        <!-- Columna 1-->
         <section class="princ-uv col-xs-12 col-md-4">
           <section class="princ-uv-icon col-xs-4 col-xs-offset-4">
             <figure>
               <img src="imagenes/uv-icon.png" class="img-responsive" />
             </figure>
           </section>
-          <section class="container text-center col-xs-12 ">
-            <h1>INDICE DE UV</h1>
-            <p>
-              Es un indicador de la intensidad de radiación ultravioleta proveniente del Sol en la superficie terrestre. También señala la capacidad de la radiación UV solar de producir lesiones en la piel.
-              <br>
-              !Se recomienda usar Bloqueador¡
-            </p>
-          </section>
-          <section class="princ-uv-btn col-xs-12 middle">
-            <button type="button" class="btn btn-primary col-xs-4 col-xs-offset-4">Más Informacion</button>
-          </section>
-        </section>
-
-        <section class="princ-marea col-xs-12 col-md-4">
-          <section class="princ-marea-icon col-xs-4 col-xs-offset-4">
-            <figure>
-              <img src="imagenes/marea-icon.png" class="img-responsive" />
-            </figure>
-          </section>
-          <section class="container text-center  col-xs-12">
-            <h1>INDICE DE MAREA</h1>
-            <p>
-              Conoceras la intensidad de la marea en tiempo real, para que tomes tus precauosiones antes de bañarte, nadar o surfear en la playa.
-              <br>
-              Si eres un amante del mar sabras que es impredecible.
-            </p>
-            <section class="princ-marea-btn col-xs-12 middle ">
-              <button type="button" class="btn btn-primary col-xs-4 col-xs-offset-4">Más Informacion</button>
+          <section class="container text-center col-xs-12">
+            <h1>INFORMACIÓN DE TU PLAYA</h1>
+            <p>Encontraras datos muy importantes en tiempo real de cada playa en el litorial norteño del pais <br> !No te olvides de usar Bloqueador¡
+            <section class="princ-uv-btn col-xs-12 middle text-center">
+              <a href="#map"><button type="button" class="btn btn-primary">Más Informacion</button></a>
             </section>
           </section>
         </section>
 
-        <section class="princ-salvavidas col-xs-12 col-md-4">
-          <section class="princ-salvavidas-icon col-xs-4 col-xs-offset-4">
-            <figure>
-              <img src="imagenes/salvavidas-icon.png" class="img-responsive" />
-            </figure>
-          </section>
-          <section class="container text-center  col-xs-12">
-            <h1>SALVA VIDAS</h1>
-            <p>
-              Si alguien esta ahogando en la playa, tú podras ayudar, encontrando rapidamente a un salvavidas, él esta capacitado para actuar en estos momentos de peligro.
-              <br>
-              Rescata a alguien.
-            </p>
-          </section>
-          <section class="princ-salvavidas-btn col-xs-12 middle ">
-            <button type="button" class="btn btn-primary col-xs-4 col-xs-offset-4">Más Informacion</button>
+
+      <!-- Columna 2 -->
+      <section class="princ-marea col-xs-12 col-md-4">
+        <section class="princ-marea-icon col-xs-4 col-xs-offset-4">
+          <figure>
+            <img src="imagenes/marea-icon.png" class="img-responsive" />
+          </figure>
+        </section>
+        <section class="container text-center col-xs-12">
+          <h1>PLAYAS NO SALUDABLES</h1>
+          <p>
+            Conoce que playas esta catalogada como no saludable segun los criterios tomado por Dirección General de Salud Ambienta
+            <br>
+            !Note arriesgues¡
+          </p>
+          <section class="princ-marea-btn col-xs-12 middle text-center">
+            <a href="/nosaludable"><button type="button" class="btn btn-primary">Más Informacion</button></a>
           </section>
         </section>
       </section>
-      <section class="datos_api conteiner-fluid row col-xs-12">
-        <section class="datos_api_nombre col-xs-12">
+
+      <!-- Columna 3 -->
+      <section class="princ-salvavidas col-xs-12 col-md-4">
+        <section class="princ-salvavidas-icon col-xs-4 col-xs-offset-4">
+          <figure>
+            <img src="imagenes/salvavidas-icon.png" class="img-responsive" />
+          </figure>
+        </section>
+        <section class="container text-center  col-xs-12">
+          <h1>SALVA VIDAS</h1>
+          <p>
+            Si alguien esta ahogando en la playa, tú podras ayudar, encontrando rapidamente a un salvavidas, él esta capacitado para actuar en estos momentos de peligro.
+            <br>
+            Rescata a alguien.
+          </p>
+        </section>
+        <section class="princ-salvavidas-btn col-xs-12 middle text-center">
+          <a href="/salvavidas.html"><button type="button" class="btn btn-primary">Más Informacion</button></a>
+        </section>
+      </section>
+    </section>
+
+      <!-- /Tres columnas -->
+
+      <!-- Blanco: Summer Fun -->
+      <section class="datos_api container-fluid col-xs-12">
+        <section class="datos_api_nombre">
           <h1 class="text-center">SUMMER FUN</h1>
         </section>
-        <div class="datos_api_1 container col-md-6 col-md-offset-3">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
-              xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-        <div class="datos_api_2 row container col-xd-12 col-md-6 col-md-offset-3">
-            <div class="datos_api_playas col-xd-12 col-md-6">
+
+        <div class="datos_api_1 col-md-6 col-md-offset-3">
+              <p>
+                Potencializa tu experiencia en las playas del norte, ya sea que disfrutes un atardecer o un día soleado con tus amigos. Esta aplicación te permitirá seguir pasando unas vacaciones con completa tranquilidad, ya que tendrás a la mano información necesaria para prevenirte de algún accidente. O pedir auxilio de manera inmediata.
+
+              </p>
+          </div>
+
+        <div class="datos_api_2 container col-xs-12 col-md-6 col-md-offset-3">
+            <div class="datos_api_playas col-xs-12 col-md-6">
               <h1 class="text-center">Playas</h1>
               <p>
-                <ul class="row col-xs-12 ">
+                <ul class="row col-xs-12">
                   <li class="row col-md-12">
-                    <figure class="col-md-2">
+                    <figure class="col-xs-2 col-md-2">
                       <img src="imagenes/pimentel-icon.png" class="img-responsive" />
                     </figure>
                     <h4 class="col-md-10">Pimentel</h4>
                   </li>
                   <li class="row col-md-12">
-                    <figure class="col-md-2">
+                    <figure class="col-xs-2 col-md-2">
                       <img src="imagenes/eten-icon.png" class="img-responsive" />
                     </figure>
-                    <h4 class="col-md-10 middle">Puerto Eten</h4>
+                    <h4 class="col-md-10 middle">Mancora</h4>
                   </li>
                   <li class="row col-md-12">
-                    <figure class="col-md-2">
+                    <figure class="col-xs-2 col-md-2">
                       <img src="imagenes/santarosa-icon.png" class="img-responsive" />
                     </figure>
-                    <h4 class="col-md-10">Santa Rosa</h4>
+                    <h4 class="col-md-10">Punta Sal</h4>
                   </li>
                   <li class="row col-md-12">
-                    <figure class="col-md-2">
+                    <figure class="col-xs-2 col-md-2">
                       <img src="imagenes/sanjose-icon.png" class="img-responsive" />
                     </figure>
-                    <h4 class="col-md-10">San Jose</h4>
+                    <h4 class="col-md-10">Vichaito</h4>
                   </li>
                 </ul>
               </p>
             </div>
-            <div class="datos_api_beneficios col-xd-12 col-md-6">
+
+            <div class="datos_api_beneficios col-xs-12 col-md-6">
               <h2 class="text-center">Beneficios</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
-                xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident,
+                <ul class="row col-xs-12">
+                  <li class="row col-md-12">
+                    <figure class="col-xs-2 col-md-2">
+                      <img src="imagenes/pimentel-icon.png" class="img-responsive" />
+                    </figure>
+                    <h4 class="col-md-10">Ubicación de las playas</h4>
+                  </li>
+                  <li class="row col-md-12">
+                    <figure class="col-xs-2 col-md-2">
+                      <img src="imagenes/eten-icon.png" class="img-responsive" />
+                    </figure>
+                    <h4 class="col-md-10 middle">Datos Meteorológicos</h4>
+                  </li>
+                  <li class="row col-md-12">
+                    <figure class="col-xs-2 col-md-2">
+                      <img src="imagenes/santarosa-icon.png" class="img-responsive" />
+                    </figure>
+                    <h4 class="col-md-10">Ubicación de Salvavidas</h4>
+                  </li>
+                  <li class="row col-md-12">
+                    <figure class="col-xs-2 col-md-2">
+                      <img src="imagenes/sanjose-icon.png" class="img-responsive" />
+                    </figure>
+                    <h4 class="col-md-10">Salubridad</h4>
+                  </li>
+                </ul>
               </p>
             </div>
+            <div class="col-xs-12 col-md-6 text-center" ng-controller="control">
+              <h2 class="text-center">Encuentra tu playa</h2>
+              </button>
+              <select  class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" name="mySelect" id="mySelect" ng-options="option.name for option in data.availableOptions track by option.id"
+                ng-model="data.selectedOption"></select>
+              <button class="btn btn-info"ng-click="buscar()">Buscar Ciudad</button>
+            </div>
         </div>
+
       </section>
 
-      <section class="mapa conteiner-fluid row col-xs-12">
+      <section class="mapa container-fluid row col-xs-12" id="map">
         <div class="mapa-google col-xs-12" id="map-canvas" style="float:left;width:100%;height:100%;"></div>
         </div>
       </section>
 
-      <section class="informacion conteiner-fluid row col-xs-12">
 
-      </section>
-
-      <section class="no-saludable conteiner-fluid row col-xs-12">
-        <section class="no-saludable-conten conteiner row col-xs-12">
+      <section class="no-saludable container-fluid row col-xs-12">
+        <section class="no-saludable-conten container row col-xs-12">
           <section class="no-saludable-conten-titulo col-xs-12">
-            <h1 class="text-center">PELIGRO</h1>
-            <h1 class="text-center">PLAYAS NO SALUDABLES</h1>
+            <h2 class="text-center">¡PELIGRO!</h2>
+            <h2 class="text-center">PLAYAS NO SALUDABLES</h2>
           </section>
           <div class= "container col-md-6 col-md-offset-3">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud e
-                xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Hay 17 playas no saludables según último reporte de Digesa
+                <br> Evita poner en riesgo tu salud, con enfermedades como la conjuntivitis, males a la piel como hongos y problemas gastrointestinales.
               </p>
           </div>
-          <button type="button" class="col-xs-6 col-xs-offset-3 btn btn-danger">CONOCÉ CUALES SON</button>
+          <a href="http://localhost/sf/nosaludable.html"><button type="button" class="col-xs-6 col-xs-offset-3 btn btn-danger">CONOCE CUÁLES SON</button></a>
         </section>
       </section>
 
-      <section class="colaboradores conteiner row col-xs-12">
+      <section class="colaboradores container row col-xs-12">
         <section class="colaboradores-titulo col-xs-12">
-          <h1 class="text-center">DESARROLLADO POR</h1>
+          <h2 class="text-center">EQUIPO DE DESARROLLO</h2>
         </section>
-        <section class="colaboradores-fila row container col-xd-12 col-md-8 col-md-offset-2">
+        <section class="colaboradores-fila row container col-xs-12 col-md-8 col-md-offset-2">
           <section class="colaboradores-persona col-md-4">
             <figure class="col-xs-10 col-xs-offset-1">
-              <img src="imagenes/daniel.jpg" class="img-responsive"/>
+              <img src="imagenes/j29.jpg" class="img-responsive"/>
             </figure>
             <div class="colaboradores-persona-nombre col-xs-12">
               <h3 class="text-center">JORGE<br>Rios Agurto</h3>
             </div>
             <div class="colaboradores-persona-desc col-xs-12">
               <p class="text-center">
-                @daniel18mendez
+                @J29Rios
                 <br>
-                Estudiante de Ingeniería de Sistemas de la Universidad Nacional Pedro Ruiz Gallo
+                Amante de la tecnología y todo lo que necesite energía. Apasionado por el desarrollo de Software y la Educación. I'm #AIESECer & #HackSpacer
               </p>
             </div>
           </section>
@@ -213,22 +238,22 @@
               <p class="text-center">
                 @daniel18mendez
                 <br>
-                Estudiante de Ingeniería de Sistemas de la Universidad Nacional Pedro Ruiz Gallo
+                Estudiante de Ingeniería de Sistemas de la Universidad Nacional Pedro Ruiz Gallo. Espacializado en Front End y Diseño de Aplicaciones.
               </p>
             </div>
           </section>
           <section class="colaboradores-persona col-md-4">
             <figure class="col-xs-10 col-xs-offset-1">
-              <img src="imagenes/daniel.jpg" class="img-responsive"/>
+              <img src="imagenes/fernando.jpg" class="img-responsive"/>
             </figure>
             <div class="colaboradores-persona-nombre col-xs-12">
-              <h3 class="text-center">JHONG<br>Fernando Balta</h3>
+              <h3 class="text-center">FERNANDO<br>Balta Jhong</h3>
             </div>
             <div class="colaboradores-persona-desc col-xs-12">
               <p class="text-center">
-                @daniel18mendez
+                @ferdj200
                 <br>
-                Estudiante de Ingeniería de Sistemas de la Universidad Nacional Pedro Ruiz Gallo
+                Ingeniero Informático egresado de la Universidad De Chiclayo. Desarrollador de aplicaciones Web, entorno Back End.
               </p>
             </div>
           </section>
@@ -239,7 +264,7 @@
           <h1 class="text-center">CON APOYO</h1>
         </section>
 
-        <section class="colaboradores-fila row container col-xd-12 col-md-8 col-md-offset-2">
+        <section class="colaboradores-fila row container col-xs-12 col-md-8 col-md-offset-2">
           <section class="colaboradores-ins col-md-4">
             <figure class="col-xs-10 col-xs-offset-1">
               <img src="imagenes/open-data-peru.png" class="img-responsive"/>
@@ -259,42 +284,117 @@
         </section>
 
       </section>
-
-      <footer class="contanier-fluider  col-xs-12 ">
-        <div class="">
-          <div class="col-md-6">
-            <h3>2015 Summer Fun</h3>
-          </div>
-          <div class="col-md-6">
-            <a href="#">
-              <div class="col-md-3">
-                <h3>Facebook</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="col-md-3">
-                <h3>Twitter</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="col-md-3">
-                <h3>GitHub</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="col-md-3">
-                <h3>Youtube</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-
-      </footer>
     </section>
+    <footer class="contanier-fluid  col-xs-12 ">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>2015 Summer Fun</h3>
+        </div>
+        <div class="col-md-6">
+          <a href="#">
+            <div class="col-md-3">
+              <h3>Facebook</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-md-3">
+              <h3>Twitter</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-md-3">
+              <h3>GitHub</h3>
+            </div>
+          </a>
+          <a href="#">
+            <div class="col-md-3">
+              <h3>Youtube</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="js/script_maps.js"></script>
+    <script src="js/script.js"></script>
+    <!-- ANGULAR -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+      var miApp = angular.module('app',[]);
+
+      miApp.controller('control', ['$scope', function($scope){
+        $scope.data = {
+          availableOptions: [
+            {id: '0', name: 'Pimentel'},
+            {id: '1', name: 'Las Rocas'},
+            {id: '2', name: 'Santa Rosa'},
+            {id: '3', name: 'Puerto Eten'},
+            {id: '4', name: 'San José'},
+            {id: '5', name: 'Los Lobos'},
+            {id: '6', name: 'Naylamp'},
+            {id: '7', name: 'Hondo'},
+            {id: '8', name: 'Monsefú'},
+            {id: '9', name: 'Media Luna'},
+            {id: '10', name: 'Máncora'},
+            {id: '11', name: 'Viyachito'},
+            {id: '12', name: 'Órganos'},
+            {id: '13', name: 'Colán'},
+            {id: '14', name: 'Lobitos'},
+            {id: '15', name: 'Cabo Blanco'},
+            {id: '16', name: 'Yacila'},
+            {id: '17', name: 'Pocitas'},
+            {id: '18', name: 'Punta Sal'},
+            {id: '19', name: 'Zorritos'},
+            {id: '20', name: 'Huanchaco'},
+            {id: '21', name: 'Pacasmayo'},
+            {id: '22', name: 'Salaverry'},
+            {id: '23', name: 'El Brujo'}
+          ],
+          selectedOption: {id: '0', name: 'Pimentel'} //This sets the default value of the select in the ui
+          };
+
+
+        $scope.buscar = function(){
+        directionsDisplay = new google.maps.DirectionsRenderer();
+
+        var image = 'http://localhost/sf/imagenes/icon/beach.png';
+
+        $.ajax({
+          url: "http://localhost/sf/rest.php?id=" + $scope.data.selectedOption.id
+        }).done(function(data) {
+        $.each(data.beaches, function(i, beach){
+          var Center = new google.maps.LatLng(beach.lat, beach.lng); //Punto Centro
+          var mapOptions = {
+          zoom: 12,
+          center: Center
+        }
+
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+          var position = {lat: beach.lat, lng: beach.lng};
+          var title = beach.nombre;
+          var marker = new google.maps.Marker({
+          map: map,
+          position: position,
+          title: title,
+          icon: image
+          });
+
+        attachSecretMessage(marker,
+                          "<div><strong>"+ beach.nombre + "</strong></div>" +
+                          "<hr><div>Temperatura: " + beach.temp + "</div>" +
+                          "<div>Velocidad del Viento: " + beach.velviento + "</div>" +
+                          "<div>Direccion del Viento: " + beach.dirvie + "</div>" +
+                          "<div>Humedad: " + beach.hum + "</div>" +
+                          "<div>Presion: " + beach.pres + "</div>");
+            });
+
+         });
+        }
+
+      }]);
+    </script>
   </body>
 </html>
