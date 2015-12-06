@@ -204,7 +204,7 @@ header{
   border-left: 20px solid  rgba(53,53,53,1);
   margin: 0;
   padding: 0;
-  background: url(../imagenes/playa-no-saludable.jpg) no-repeat ;
+  background: url(../imagenes/botella-playa.jpg) no-repeat ;
   height: 750px;
 
 }
@@ -239,4 +239,71 @@ header{
   font-size: 2em;
   margin-top: 60px;
   background: rgba(160,26,67, 1);
+}
+
+.colaboradores{
+
+  margin: 0;
+
+}
+
+.colaboradores-titulo{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.colaboradores-titulo h1{
+  font-size: 4em;
+
+}
+
+.apoyo-titulo h1{
+  font-size: 3em;
+}
+
+.colaboradores-fila{
+}
+
+.colaboradores-persona{
+  padding-bottom: 20px;
+}
+
+.colaboradores-persona img{
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.colaboradores-persona h3{
+  padding: 10px;
+  background: #353535;
+  color: white;
+}
+
+.colaboradores-ins{
+  margin-bottom: 50px;
+}
+
+.colaboradores-ins img{
+  width: 200px;
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+footer{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background: #101010;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  color: #9d9d9d;
+}
+
+footer a{
+  color: #9d9d9d;
+}
+
+footer a:hover{
+  color: white;
 }
