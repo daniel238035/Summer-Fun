@@ -113,7 +113,7 @@ header{
 }
 
 .datos_api{
-  border: 1px solid red;
+
   padding: 0px;
   border-left: 20px solid  rgba(209,193,52,1);
   margin: 0;
@@ -136,8 +136,6 @@ header{
 
 }
 
-
-
 .datos_api_1 h1{
   text-align: center;
 }
@@ -157,45 +155,88 @@ header{
 
 
 .datos_api_playas figure{
-  border: 1px solid red;
+
   margin: 0;
 }
 
 .datos_api_playas ul{
-  border: 1px solid red;
+
   margin: 0;
-  padding: 0;
+  padding-left: 50px;
 }
 
 .datos_api_playas li{
-  border: 1px solid red;
+
   list-style: none;
   margin: 5px 0;
   padding: 0;
+
 }
 
 .datos_api_playas h4{
-  border: 1px solid red;
+
   font-size: 1.8em;
   margin: 0;
+  margin-top: 3px;
 }
 
-.marea{
+.mapa{
   height: 915px;
   border-left: 20px solid rgba(25,101,163, 1);
   margin: 0;
   padding: 0px;
 }
 
-.salvavidas{
+.mapa-google{
+  padding: 0;
+  margin: 0;
+
+}
+
+.informacion{
   height: 200px;
   border-left: 20px solid  rgba(160,26,67, 1);
   margin: 0;
 }
 
+.no-saludable{
 
-.mapa-google{
-  padding: 0;
+  border-left: 20px solid  rgba(53,53,53,1);
   margin: 0;
+  padding: 0;
+  background: url(../imagenes/playa-no-saludable.jpg) no-repeat ;
+  height: 750px;
 
+}
+
+.no-saludable-conten{
+  background: rgba(53,53,53,0.6);
+  height: 750px;
+  margin: 0;
+  color: white;
+}
+
+.no-saludable-conten-titulo{
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+.no-saludable-conten-titulo h1{
+  font-size: 4em;
+  font-weight: bold;
+}
+
+
+.no-saludable-conten div p{
+
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.no-saludable-conten button{
+  font-size: 2em;
+  margin-top: 60px;
+  background: rgba(160,26,67, 1);
 }
